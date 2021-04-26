@@ -53,6 +53,7 @@ func GetFoo() *Foo {
 	return fooPool.Get().(*Foo)
 }
 
+// GetStat return pooling stat
 func GetStat() map[string]interface{} {
 	return fooPool.Stats()
 }
